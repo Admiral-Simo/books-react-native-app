@@ -14,6 +14,9 @@ const LandingScreen = () => {
         <View className="font-bold">
           <Text className="text-white">Learn Freely with Bookly</Text>
           <Text className="text-red-500">Your way to unlimited knowledge</Text>
+          <Text className="text-red-500">Your way to unlimited knowledge</Text>
+          <Text className="text-red-500">Your way to unlimited knowledge</Text>
+          <Text className="text-red-500">Your way to unlimited knowledge</Text>
           <Text>
             This App Allows you to read full screen and tracks your book
             progress So You Don't have to worry about yourself losing focus.
