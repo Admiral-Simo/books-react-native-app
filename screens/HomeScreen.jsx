@@ -1,11 +1,18 @@
 import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import Cathegories from "../components/Cathegories/Cathegories";
-import { FontAwesome } from '@expo/vector-icons';
+import { FontAwesome } from "@expo/vector-icons";
 
-<FontAwesome name="search" size={24} color="black" />
+<FontAwesome name="search" size={24} color="black" />;
 
 const HomeScreen = () => {
+  const [query, setQuery] = useState("");
+
+  const searchHandler = () => {
+    // TODO fileter active books by title
+    setQuery('');
+  };
+
   return (
     <View className="pt-12 px-3 bg-white flex-1">
       {/* Welcome User */}
@@ -24,10 +31,17 @@ const HomeScreen = () => {
       </View>
 
       {/* TODO put search Icon left to the text input */}
-      <TextInput
-        className="px-8 mb-8 py-3 bg-gray-100 rounded-lg text-gray-400"
-        placeholder="search books..."
-      />
+      <View className="bg-gray-100 flex-row items-center px-4 rounded-lg mb-8">
+        <TextInput
+          className="py-3 bg-gray-100 rounded-lg flex-1 text-gray-400"
+          placeholder="search books..."
+          onChangeText={setQuery}
+          value={query}
+        />
+        <TouchableOpacity onPress={searchHandler}>
+          <FontAwesome name="search" size={24} color="black" />
+        </TouchableOpacity>
+      </View>
       <Cathegories />
     </View>
   );
