@@ -22,7 +22,7 @@ function BookCard({ img }) {
         }}
         className="w-32 h-44 rounded-lg bg-transparent"
       />
-      <Text className="mt-4 font-bold">Think And Grow Rich</Text>
+      <Text className="mt-4 text-sm font-inter">Think And Grow Rich</Text>
       <Text className="text-xs text-gray-500">Napoleon Hill</Text>
     </View>
   );

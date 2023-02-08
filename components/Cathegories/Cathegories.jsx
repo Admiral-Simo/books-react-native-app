@@ -4,14 +4,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectActiveCathegory } from "../../app/features/cathegorySlice";
 import { setActiveCathegory } from "../../app/features/cathegorySlice";
 
-
 const Cathegories = () => {
-    const dispatch = useDispatch();
-    const activeCathegory = useSelector(selectActiveCathegory);
+  const dispatch = useDispatch();
+  const activeCathegory = useSelector(selectActiveCathegory);
 
-    const changeCathegory = (input) => {
-        dispatch(setActiveCathegory(input))
-    }
+  const changeCathegory = (input) => {
+    dispatch(setActiveCathegory(input));
+  };
 
   return (
     <View className="justify-around flex-row">
@@ -19,7 +18,7 @@ const Cathegories = () => {
         className="pb-3"
         onPress={() => changeCathegory("toread")}
       >
-        <Text>To Read</Text>
+        <Text className="font-inter">To Read</Text>
         {activeCathegory === "toread" && (
           <View className="absolute bottom-0 w-full bg-red-500 h-0.5" />
         )}
@@ -28,7 +27,7 @@ const Cathegories = () => {
         className="pb-3"
         onPress={() => changeCathegory("reading")}
       >
-        <Text>Reading</Text>
+        <Text className="font-inter">Reading</Text>
         {activeCathegory === "reading" && (
           <View className="absolute bottom-0 w-full bg-red-500 h-0.5" />
         )}
@@ -37,7 +36,7 @@ const Cathegories = () => {
         className="pb-3"
         onPress={() => changeCathegory("completed")}
       >
-        <Text>Completed Read</Text>
+        <Text className="font-inter">Completed Read</Text>
         {activeCathegory === "completed" && (
           <View className="absolute bottom-0 w-full bg-red-500 h-0.5" />
         )}

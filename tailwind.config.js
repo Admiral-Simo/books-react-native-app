@@ -7,7 +7,10 @@ module.exports = {
     "./components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: { "inter": ["Inter-Black", "sans-serif"] },
+      fontFamily: { "robreg": ["Roboto-Regular", "sans-serif"] },
+    },
   },
   plugins: [],
 };
