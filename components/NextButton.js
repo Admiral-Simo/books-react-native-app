@@ -56,7 +56,7 @@ export default NextButton = ({ percentage, scrollTo }) => {
     <View style={styles.container}>
       <Svg width={size} height={size}>
         <Circle
-          stroke="#374985"
+          stroke="#dbdbdb"
           cx={center}
           cy={center}
           r={radius}
@@ -74,10 +74,7 @@ export default NextButton = ({ percentage, scrollTo }) => {
         />
       </Svg>
 
-      <LinearGradient
-        colors={["#503e9e", "#3005e8"]}
-        style={styles.button}
-      >
+      <LinearGradient colors={["#503e9e", "#3005e8"]} style={styles.button}>
         <TouchableOpacity onPress={scrollTo} activeOpacity={0.6}>
           <AntDesign name="arrowright" size={32} color="#fff" />
         </TouchableOpacity>

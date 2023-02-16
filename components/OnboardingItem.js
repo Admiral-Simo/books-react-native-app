@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import {
   View,
@@ -7,8 +7,6 @@ import {
   Image,
   useWindowDimensions,
 } from "react-native";
-
-import { useFonts } from "expo-font";
 
 export default OnboardingItem = ({ item }) => {
   const { width } = useWindowDimensions();
@@ -45,7 +43,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 25,
     marginBottom: 40,
-    color: "#fff",
+    color: "#6573ae",
     textAlign: "center",
     fontFamily: "Dela",
   },

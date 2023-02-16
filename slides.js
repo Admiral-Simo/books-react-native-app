@@ -15,7 +15,7 @@ export default [
   },
   {
     id: "3",
-    title: "Bookmarks & Note Your Favorite ",
+    title: "Bookmark & Note ",
     description:
       "With bookmarks, notes, and highlights, you can easily keep track of your reading progress and save important passages for future reference. ",
     image: require("./assets/bookshelves.png"),
