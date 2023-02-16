@@ -9,33 +9,11 @@ import {
 } from "react-native";
 
 import { useFonts } from "expo-font";
-import * as SplashScreen from "expo-splash-screen";
 
 export default OnboardingItem = ({ item }) => {
   const { width } = useWindowDimensions();
 
-  const [loaded] = useFonts({
-    InterBlack: require("../assets/fonts/Inter-Black.ttf"),
-    InterBold: require("../assets/fonts/Inter-Bold.ttf"),
-    InterMedium: require("../assets/fonts/Inter-Medium.ttf"),
-    InterRegular: require("../assets/fonts/Inter-Regular.ttf"),
-    InterSemiBold: require("../assets/fonts/Inter-SemiBold.ttf"),
-    RobotoLite: require("../assets/fonts/Roboto-Lite.ttf"),
-    Dela: require("../assets/fonts/DelaGothicOne-Regular.ttf"),
-  });
-
-  useEffect(() => {
-    async function prepare() {
-      await SplashScreen.preventAutoHideAsync();
-    }
-    prepare();
-  }, []);
-
-  if (!loaded) {
-    return null;
-  } else {
-    SplashScreen.hideAsync();
-  }
+  
 
   return (
     <View style={[styles.container, { width }]}>

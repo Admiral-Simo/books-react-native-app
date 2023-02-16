@@ -8,8 +8,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: { "inter": ["Inter-Black", "sans-serif"] },
-      fontFamily: { "robreg": ["Roboto-Regular", "sans-serif"] },
+      fontFamily: { inter: ["InterBlack", "Dela"], dela: ["Dela"] },
     },
   },
   plugins: [],

@@ -18,7 +18,7 @@ const Cathegories = () => {
         className="pb-3"
         onPress={() => changeCathegory("toread")}
       >
-        <Text className="font-inter">To Read</Text>
+        <Text className="font-inter" style={{fontFamily: 'InterBlack'}}>To Read</Text>
         {activeCathegory === "toread" && (
           <View className="absolute bottom-0 w-full bg-red-500 h-0.5" />
         )}
@@ -27,7 +27,7 @@ const Cathegories = () => {
         className="pb-3"
         onPress={() => changeCathegory("reading")}
       >
-        <Text className="font-inter">Reading</Text>
+        <Text className="font-inter" style={{fontFamily: 'InterBlack'}}>Reading</Text>
         {activeCathegory === "reading" && (
           <View className="absolute bottom-0 w-full bg-red-500 h-0.5" />
         )}
@@ -36,7 +36,7 @@ const Cathegories = () => {
         className="pb-3"
         onPress={() => changeCathegory("completed")}
       >
-        <Text className="font-inter">Completed Read</Text>
+        <Text className="font-inter" style={{fontFamily: 'InterBlack'}}>Completed Read</Text>
         {activeCathegory === "completed" && (
           <View className="absolute bottom-0 w-full bg-red-500 h-0.5" />
         )}

@@ -22,7 +22,7 @@ function BookCard({ img }) {
         }}
         className="w-32 h-44 rounded-lg"
       />
-      <Text className="mt-4 text-sm font-inter">Think And Grow Rich</Text>
+      <Text className="mt-4 text-sm font-inter" style={{fontFamily: 'InterBlack'}}>Think And Grow Rich</Text>
       <Text className="text-xs text-gray-500">Napoleon Hill</Text>
     </TouchableOpacity>
   );

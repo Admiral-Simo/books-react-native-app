@@ -5,8 +5,8 @@ import BookCards from "../BookCards/BookCards";
 const History = () => {
   return (
     <View className="mt-8">
-      <View className="py-4 bg-white items-center">
-        <Text className="font-inter text-2xl">History</Text>
+      <View className="py-4 items-center">
+        <Text className="font-inter text-2xl" style={{fontFamily: 'InterBlack'}}>History</Text>
       </View>
       <BookCards />
     </View>
