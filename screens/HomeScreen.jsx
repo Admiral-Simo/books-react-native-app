@@ -12,11 +12,12 @@ import Cathegories from "../components/Cathegories/Cathegories";
 import { FontAwesome } from "@expo/vector-icons";
 import BookCards from "../components/BookCards/BookCards";
 import { useFonts } from "expo-font";
+import History from "../components/History/History";
 
 const HomeScreen = () => {
   const [fontsLoaded] = useFonts({
     "Inter-Black": require("../assets/fonts/Inter-Black.ttf"),
-    "Roboto-Regular": require('../assets/fonts/Roboto-Regular.ttf')
+    "Roboto-Regular": require("../assets/fonts/Roboto-Regular.ttf"),
   });
 
   const [query, setQuery] = useState("");
@@ -28,7 +29,7 @@ const HomeScreen = () => {
 
   if (fontsLoaded) {
     return (
-      <View className="bg-gray-100 flex-1">
+      <ScrollView className="bg-gray-100">
         {/* Welcome User */}
         <View className="bg-white px-3 pt-12">
           <View className="flex-row justify-between items-center mb-8">
@@ -59,7 +60,9 @@ const HomeScreen = () => {
           <Cathegories />
         </View>
         <BookCards />
-      </View>
+        {/* History */}
+        <History />
+      </ScrollView>
     );
   } else {
     <View>

@@ -17,7 +17,7 @@ function App() {
     <NavigationContainer>
       <Provider store={store}>
         <Stack.Navigator
-          initialRouteName="Home"
+          initialRouteName="Landing"
           screenOptions={{ headerShown: false }}
         >
           <Stack.Screen name="Landing" component={LandingScreen} />
